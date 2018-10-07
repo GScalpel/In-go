@@ -30,7 +30,7 @@ func In(dst, src interface{}) (bool,error) {
 			for _, j := range srcIter{
 				if i == j {
 					judge = true
-					continue
+					break
 				}
 			}
 			if judge == false{
